@@ -12,37 +12,49 @@ on:
 
 jobs:
   check:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 안정적인 버전을 명시하는 것을 권장합니다.
+
       - name: Install Prettier 💾
-        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+        # --no-save를 사용하여 package.json 변경을 원천 차단합니다.
+        run: npm install --no-save --save-exact prettier @shopify/prettier-plugin-liquid
+
       - name: Prettier Check 🔎
         id: prettier
         run: npx prettier . --check
+
       - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+        # 이전 단계가 실패한 것이 아닌, 정확히 Prettier 체크가 실패했을 때만 실행되도록 수정
+        if: failure() && steps.prettier.outcome == 'failure'
         run: |
           npx prettier . --write
+          # --no-save를 썼으므로 exclude 처리를 굳이 하지 않아도 되지만, 안정성을 위해 유지해도 무방합니다.
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
+
       - name: Upload html diff ⬆️
         id: artifact-upload
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
+        # ${{ }} 기호 제거 (if문 내부)
+        if: failure() && steps.prettier.outcome == 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: HTML Diff
           path: diff.html
           retention-days: 7
+
       - name: Dispatch information to repository 🗣️
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
+        if: failure() && steps.prettier.outcome == 'failure' && github.event_name == 'pull_request'
         uses: peter-evans/repository-dispatch@v2
         with:
+          # 필수 사항: PAT를 리포지토리 Secrets에 등록 후 연결해야 합니다.
+          token: ${{ secrets.PAT_TOKEN }}
           event-type: prettier-failed-on-pr
           client-payload: '{"pr_number": "${{ github.event.number }}", "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url }}", "run_id": "${{ github.run_id }}"}'

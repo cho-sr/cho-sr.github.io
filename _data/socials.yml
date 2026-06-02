@@ -3,7 +3,7 @@
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 email: cho020218@gmail.com # your email address
 github_username: cho-sr # your GitHub user name
-# linkedin_username: your-linkedin-id
+linkedin_username: "%EC%84%9D%EB%9E%98-%EC%A1%B0-02a50231b"
 custom_social:
   logo: fa-solid fa-blog
   title: Tistory Blog

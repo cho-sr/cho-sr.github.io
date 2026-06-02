@@ -5,13 +5,12 @@ title: blog
 nav: true
 nav_order: 1
 pagination:
-  enabled: true
+  enabled: false
   collection: posts
   permalink: /page/:num/
   per_page: 5
   sort_field: date
   sort_reverse: true
-  category: tistory
   trail:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
@@ -110,6 +109,7 @@ pagination:
     {% else %}
       {% assign postlist = site.posts %}
     {% endif %}
+    {% assign postlist = postlist | where: "external_source", "Tistory" %}
 
     {% for post in postlist %}
 

@@ -27,13 +27,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-한성대학교 지능형시스템 및 사물인터넷 학과 4학년에 재학 중인 조석래입니다.
+I'm Cho Seok-lea, a senior in the Department of Intelligent Systems and IoT at Hansung University.
 
-주요 연구 분야는 모바일 및 엣지 환경에서의 AI 모델 최적화와 에너지 효율 향상입니다.
+The main research areas are AI model optimization and energy efficiency improvement in mobile and edge environments.
 
-현재 PyTorch와 CUDA를 활용하여 모델 개발 및 디버깅을 진행하며, AI 알고리즘을 엣지 디바이스와 효율적으로 연동하는 시스템 아키텍처를 연구하고 있습니다.
+Currently, we are developing and debugging models using PyTorch and CUDA, and studying system architectures that efficiently link AI algorithms with edge devices.
 
 **Research Interests**
 * **Energy Efficient Edge Inference**
 * **Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
-* **Deep Learning/AI Accelerator** 
+* **Deep Learning/AI Accelerator**

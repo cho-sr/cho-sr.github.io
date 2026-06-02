@@ -54,7 +54,7 @@ jobs:
         with:
           name: RenderCV Output
           path: assets/rendercv/rendercv_output
-- name: Push the changes
+      - name: Push the changes
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"

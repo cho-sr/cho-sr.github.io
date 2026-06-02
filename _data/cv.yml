@@ -61,7 +61,7 @@ cv:
           - Scene and subtitle retrieval
 
       - name: Pocket-Coach
-        summary: IoT capstone app for soccer video analysis with player/ball tracking, highlight feedback, USB MIDI servo control, and ExecuTorch on-device detection.
+        summary: IoT capstone app for soccer video analysis with player/ball tracking, highlight feedback, USB MIDI servo control, and ExecuTorch NPU on-device detection.
         highlights:
           - Soccer video analysis
           - ExecuTorch NPU inference prototype

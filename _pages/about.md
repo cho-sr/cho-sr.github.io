@@ -34,6 +34,6 @@ The main research areas are AI model optimization and energy efficiency improvem
 Currently, we are developing and debugging models using PyTorch and CUDA, and studying system architectures that efficiently link AI algorithms with edge devices.
 
 **Research Interests**
-**Energy Efficient Edge Inference**
-**Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
-**Deep Learning/AI Accelerator**
+- **Energy Efficient Edge Inference**
+- **Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
+- **Deep Learning/AI Accelerator**

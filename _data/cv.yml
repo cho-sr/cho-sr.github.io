@@ -15,20 +15,23 @@ cv:
       - company: Prof. Jinwoo Gong Research Group
         position: Undergraduate Researcher
         location: Hansung University, Seoul
-        date: "2025.12-Present"
+        start_date: "2025-12"
+        end_date: present
         highlights:
           - Developing and debugging AI models with PyTorch and CUDA.
           - Studying system architectures for connecting AI algorithms with edge devices.
 
       - company: LG Aimers 4th
         position: Participant
-        date: "2024.01-2024.03"
+        start_date: "2024-01"
+        end_date: "2024-03"
         highlights:
           - Completed AI education and project-based learning program.
 
       - company: BoostCourse Coaching Study 13th
         position: Participant
-        date: "2023.10-2023.11"
+        start_date: "2023-10"
+        end_date: "2023-11"
         highlights:
           - Completed coaching study activities through BoostCourse.
 
@@ -37,7 +40,8 @@ cv:
         location: Seoul, South Korea
         area: IT Convergence Engineering, Intelligent Systems Track
         studyType: B.S.
-        date: "2021-Present"
+        start_date: "2021"
+        end_date: present
 
     Publications:
       - title: Evaluating Generalization and Data Leakage in Large Language Models via Data Perturbation

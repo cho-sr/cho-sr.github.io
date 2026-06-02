@@ -36,4 +36,4 @@ latest_posts:
 **Research Interests**
 * **Energy Efficient Edge Inference**
 * **Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
-* **Deep Learning/AI Accelerator:** Hardware-Aware Optimization, Domain Specific Optimization
+* **Deep Learning/AI Accelerator** 

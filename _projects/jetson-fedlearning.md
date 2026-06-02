@@ -4,7 +4,7 @@ title: Jetson Federated Learning
 description: Federated Brain MRI 4-class classification with lightweight PyTorch CNNs for Jetson/edge devices.
 img: assets/img/projects/jetson-fedlearning.png
 redirect: https://github.com/cho-sr/jetson-fedlearning
-importance: 5
+importance: 6
 category: research
 ---
 

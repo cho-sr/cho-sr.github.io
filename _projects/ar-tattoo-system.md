@@ -4,7 +4,7 @@ title: AR Tattoo System
 description: MediaPipe and OpenCV AR tattoo overlay using pose landmarks, hand gestures, and image compositing.
 img: assets/img/8.jpg
 redirect: https://github.com/cho-sr/25-1_CV
-importance: 6
+importance: 7
 category: coursework
 ---
 

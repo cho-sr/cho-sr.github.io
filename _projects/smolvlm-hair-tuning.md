@@ -4,7 +4,7 @@ title: SmolVLM Hair Tuning
 description: SmolVLM-256M QLoRA fine-tuning for hair/scalp image diagnosis and care recommendations.
 img: assets/img/projects/smolvlm-hair-tuning.png
 redirect: https://github.com/cho-sr/SmolVLM_hair_tuning
-importance: 4
+importance: 5
 category: research
 ---
 

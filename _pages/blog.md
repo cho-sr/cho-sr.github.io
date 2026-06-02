@@ -123,7 +123,12 @@ pagination:
     {% assign categories = post.categories | join: "" %}
     {% assign post_image = post.thumbnail %}
     {% if post_image == blank and post.redirect %}
-      {% assign post_image = site.data.tistory_thumbnails[post.redirect] %}
+      {% for thumbnail in site.data.tistory_thumbnails %}
+        {% if thumbnail.url == post.redirect %}
+          {% assign post_image = thumbnail.image %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
     {% endif %}
     {% if post_image == blank and post.external_source and post.feed_content contains '<img' %}
       {% assign image_chunks = post.feed_content | split: '<img' %}

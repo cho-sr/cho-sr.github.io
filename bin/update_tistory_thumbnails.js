@@ -61,10 +61,11 @@ async function main() {
   const lines = [`# Generated from ${RSS_URL} by bin/update_tistory_thumbnails.js`, "# Do not edit by hand."];
 
   if (thumbnails.size === 0) {
-    lines.push("{}");
+    lines.push("[]");
   } else {
     for (const [link, thumbnail] of thumbnails) {
-      lines.push(`${yamlQuote(link)}: ${yamlQuote(thumbnail)}`);
+      lines.push(`- url: ${yamlQuote(link)}`);
+      lines.push(`  image: ${yamlQuote(thumbnail)}`);
     }
   }
 

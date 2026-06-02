@@ -11,6 +11,7 @@ pagination:
   per_page: 5
   sort_field: date
   sort_reverse: true
+  category: tistory
   trail:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
@@ -56,7 +57,7 @@ pagination:
   </div>
   {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
+{% assign featured_posts = site.posts | where: "featured", "true" | where_exp: "post", "post.categories contains 'tistory'" %}
 {% if featured_posts.size > 0 %}
 <br>
 

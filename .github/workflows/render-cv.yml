@@ -54,10 +54,15 @@ jobs:
         with:
           name: RenderCV Output
           path: assets/rendercv/rendercv_output
-      - name: Push the changes
+- name: Push the changes
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git add -A
-          git commit -m "chore: render the latest CV"
-          git push
+          # 변경 사항이 있을 때만 commit과 push를 진행하도록 예외 처리를 추가합니다.
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore: render the latest CV"
+            git push
+          else
+            echo "No changes to commit. Skipping push."
+          fi

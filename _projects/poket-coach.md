@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Poket-Coach
+title: Pocket-Coach
 description: iOS capstone app with soccer player/ball tracking, event analysis, and highlight feedback.
 img: assets/img/projects/poket-coach.png
-redirect: https://github.com/cho-sr/Poket-Coach
+redirect: https://github.com/cho-sr/Pocket-Coach
 importance: 3
 category: apps
 ---

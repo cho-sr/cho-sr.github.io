@@ -6,7 +6,9 @@ repo_description_lines_max: 2
 github_repos:
   - cho-sr/DLG
   - cho-sr/VideoQna
-  - cho-sr/Poket-Coach
+  - cho-sr/Pocket-Coach
   - cho-sr/SmolVLM_hair_tuning
   - cho-sr/jetson-fedlearning
   - cho-sr/25-1_CV
+  - cho-sr/24-2_OOP
+  - cho-sr/MoblieProg

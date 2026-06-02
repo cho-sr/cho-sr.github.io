@@ -121,10 +121,30 @@ pagination:
     {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
+    {% assign post_image = post.thumbnail %}
+    {% if post_image == blank and post.external_source and post.feed_content contains '<img' %}
+      {% assign image_chunks = post.feed_content | split: '<img' %}
+      {% for image_chunk in image_chunks offset: 1 %}
+        {% assign image_tag = image_chunk | split: '>' | first %}
+        {% assign candidate_image = "" %}
+        {% if image_tag contains 'src="' %}
+          {% assign candidate_image = image_tag | split: 'src="' | last | split: '"' | first %}
+        {% elsif image_tag contains "src='" %}
+          {% assign candidate_image = image_tag | split: "src='" | last | split: "'" | first %}
+        {% endif %}
+        {% if candidate_image != blank and candidate_image contains 'no-image-v1.png' %}
+          {% assign candidate_image = "" %}
+        {% endif %}
+        {% if candidate_image != blank %}
+          {% assign post_image = candidate_image %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
 
     <li>
 
-{% if post.thumbnail %}
+{% if post_image %}
 
 <div class="row">
           <div class="col-sm-9">
@@ -176,12 +196,16 @@ pagination:
           {% endif %}
     </p>
 
-{% if post.thumbnail %}
+{% if post_image %}
 
 </div>
 
   <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
+    {% if post_image contains '://' or post_image contains '//' %}
+      <img class="card-img" src="{{ post_image }}" style="object-fit: cover; height: 90%" alt="{{ post.title }}">
+    {% else %}
+      <img class="card-img" src="{{ post_image | relative_url }}" style="object-fit: cover; height: 90%" alt="{{ post.title }}">
+    {% endif %}
   </div>
 </div>
 {% endif %}

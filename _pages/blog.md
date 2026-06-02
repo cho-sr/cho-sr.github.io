@@ -57,7 +57,8 @@ pagination:
   </div>
   {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" | where_exp: "post", "post.categories contains 'tistory'" %}
+{% assign featured_posts = site.posts | where: "featured", "true" %}
+{% assign featured_posts = featured_posts | where: "external_source", "Tistory" %}
 {% if featured_posts.size > 0 %}
 <br>
 

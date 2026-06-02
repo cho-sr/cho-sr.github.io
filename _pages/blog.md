@@ -122,6 +122,9 @@ pagination:
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
     {% assign post_image = post.thumbnail %}
+    {% if post_image == blank and post.redirect %}
+      {% assign post_image = site.data.tistory_thumbnails[post.redirect] %}
+    {% endif %}
     {% if post_image == blank and post.external_source and post.feed_content contains '<img' %}
       {% assign image_chunks = post.feed_content | split: '<img' %}
       {% for image_chunk in image_chunks offset: 1 %}

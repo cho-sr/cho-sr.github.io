@@ -109,9 +109,11 @@ pagination:
     {% else %}
       {% assign postlist = site.posts %}
     {% endif %}
-    {% assign postlist = postlist | where: "external_source", "Tistory" %}
 
     {% for post in postlist %}
+    {% unless post.redirect contains 'eve-com.tistory.com' %}
+      {% continue %}
+    {% endunless %}
 
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}

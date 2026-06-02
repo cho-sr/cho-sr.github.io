@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm Cho Seok-lea, a senior in the Department of Intelligent Systems and IoT at Hansung University.
+I'm Cho Seok-lea, an undergraduate student in the Department of Intelligent Systems and IoT at Hansung University.
 
 The main research areas are AI model optimization and energy efficiency improvement in mobile and edge environments.
 

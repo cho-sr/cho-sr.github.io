@@ -40,6 +40,10 @@ Currently, we are developing and debugging models using PyTorch and CUDA, and st
 - **BoostCourse Coaching Study 13th** / 2023.10 - 2023.11
 - **Hansung University, IT Convergence Engineering (Intelligent Systems Track)** / 2021 - Present
 
+**[Project]({{ '/projects/' | relative_url }})**
+
+I have built edge AI, mobile, IoT capstone, federated learning, and video search projects using PyTorch, CUDA, ExecuTorch, Kotlin, Swift, and Jetpack Compose.
+
 **Research Interests**
 
 - **Energy Efficient Edge Inference**

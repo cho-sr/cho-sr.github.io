@@ -148,7 +148,7 @@ ul.timeline li::before {
   left: 2px;
   top: -0.5rem;
 }
-/*! purgecss start ignore */
+/* purgecss start ignore */
 .cv .date-column .badge {
   white-space: nowrap;
   min-width: 104px !important;
@@ -156,4 +156,4 @@ ul.timeline li::before {
   line-height: 1.1;
   display: inline-block;
 }
-/*! purgecss end ignore */
+/* purgecss end ignore */

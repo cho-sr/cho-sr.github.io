@@ -46,7 +46,7 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
 
 **[Award]({{ '/cv/' | relative_url }}#awards)**
 
-- **Hanseong University's Internet of Things Track Capstone Design Excellence Award(2nd place)**
+- <strong>Hanseong University's Internet of Things Track Capstone Design Excellence Award(2nd place)</strong>
 
 **Research Interests**
 

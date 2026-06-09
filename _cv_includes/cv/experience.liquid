@@ -3,11 +3,11 @@
   Keeps CV date badges on one line and preserves month-level dates from RenderCV data.
 {% endcomment %}
 
-<ul class="card-text font-weight-light list-group list-group-flush">
+<ul class="card-text font-weight-light list-group list-group-flush" style="list-style: none; padding-left: 0">
   {% for entry in entries %}
-    <li class="list-group-item">
+    <li class="list-group-item" style="list-style: none">
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+        <div class="col-12 col-sm-4 col-md-3 text-left date-column">
           {% capture start_date %}
             {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
           {% endcapture %}
@@ -25,13 +25,13 @@
             {% assign date = '' %}
           {% endif %}
 
-          <table class="table-cv">
+          <table class="table-cv" style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
                 <td>
                   <span
                     class="badge font-weight-bold danger-color-dark text-uppercase align-middle"
-                    style="min-width: 104px; white-space: nowrap; font-size: 0.62rem; line-height: 1.1; display: inline-block"
+                    style="max-width: 100%; min-width: 104px; white-space: nowrap; font-size: 0.62rem; line-height: 1.1; display: inline-block"
                   >
                     {{ date }}
                   </span>
@@ -40,10 +40,11 @@
               {% capture location %}
                 {% if entry.location %}{{ entry.location }}{% endif %}
               {% endcapture %}
+              {% assign location = location | strip %}
               {% if location != '' %}
                 <tr>
                   <td>
-                    <p class="location">
+                    <p class="location" style="white-space: normal; overflow-wrap: anywhere; line-height: 1.2">
                       <i class="fa-solid fa-location-dot iconlocation"></i>
                       {{ location }}
                     </p>
@@ -53,7 +54,7 @@
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="col-12 col-sm-8 col-md-9 mt-2 mt-sm-0">
           {% capture position_title %}
             {% if entry.position %}{{ entry.position }}{% endif %}
           {% endcapture %}

@@ -72,6 +72,9 @@ cv:
           - On-device object detection
           - iOS live camera inference
 
+    Awards:
+      - title: 한성대학교 사물인터넷캡스톤 디자인 우수상
+
     Skills:
       - name: AI and Edge Systems
         icon: fa-solid fa-microchip

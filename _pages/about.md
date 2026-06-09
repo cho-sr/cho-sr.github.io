@@ -44,6 +44,10 @@ Currently, we are developing and debugging models using PyTorch and CUDA, and st
 
 I have built edge AI, mobile, IoT capstone, federated learning, and video search projects using PyTorch, CUDA, ExecuTorch, Kotlin, Swift, and Jetpack Compose.
 
+**[Award]({{ '/cv/' | relative_url }}#awards)**
+
+- **한성대학교 사물인터넷캡스톤 디자인 우수상**
+
 **Research Interests**
 
 - **Energy Efficient Edge Inference**

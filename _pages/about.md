@@ -36,8 +36,7 @@ I study attacks such as privacy leakage, poisoning, and adversarial manipulation
 **Research Interests**
 
 - **Energy Efficient Edge Inference**
-- **Trustworthy Federated Learning:** Attacks, Defenses, Federated Unlearning, and Bayesian Uncertainty Estimation
-- **Efficient Distributed AI:** Resource-Aware Sparsification and Distributed Optimization
+- **Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
 - **Deep Learning/AI Accelerator**
 
 **[Experiences]({{ '/cv/' | relative_url }})**

@@ -29,9 +29,16 @@ latest_posts:
 
 I'm Cho Seok-lea, an undergraduate student in the Department of Intelligent Systems and IoT at Hansung University.
 
-The main research areas are AI model optimization and energy efficiency improvement in mobile and edge environments.
+My research focuses on trustworthy AI in federated learning and distributed AI environments.
 
-Currently, we are developing and debugging models using PyTorch and CUDA, and studying system architectures that efficiently link AI algorithms with edge devices.
+I study attacks such as privacy leakage, poisoning, and adversarial manipulation together with robust learning, verification, and mitigation techniques. I am also interested in federated unlearning, Bayesian uncertainty estimation, and resource-aware sparsification for building federated learning frameworks that are reliable, accountable, secure, scalable, and efficient.
+
+**Research Interests**
+
+- **Energy Efficient Edge Inference**
+- **Trustworthy Federated Learning:** Attacks, Defenses, Federated Unlearning, and Bayesian Uncertainty Estimation
+- **Efficient Distributed AI:** Resource-Aware Sparsification and Distributed Optimization
+- **Deep Learning/AI Accelerator**
 
 **[Experiences]({{ '/cv/' | relative_url }})**
 
@@ -48,9 +55,3 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
 
 - <strong>Hansung University, Internet of Things Track Capstone Design Excellence Award (2nd place)</strong>
 - <strong>Hansung University, Intelligence System Track Capstone Design Excellence Award (2nd place)</strong>
-
-**Research Interests**
-
-- **Energy Efficient Edge Inference**
-- **Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
-- **Deep Learning/AI Accelerator**

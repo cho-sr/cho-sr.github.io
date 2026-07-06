@@ -18,8 +18,9 @@ cv:
         start_date: "2025-12"
         end_date: present
         highlights:
-          - Developing and debugging AI models with PyTorch and CUDA.
-          - Studying system architectures for connecting AI algorithms with edge devices.
+          - Researching trustworthy federated and distributed AI, including privacy leakage, poisoning, adversarial manipulation, and robust defenses.
+          - Designing learning frameworks that combine federated unlearning with Bayesian uncertainty estimation to improve reliability, accountability, and security.
+          - Improving the scalability and efficiency of federated learning through resource-aware sparsification without sharing client data.
 
       - company: LG Aimers 4th
         position: Participant

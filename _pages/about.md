@@ -31,7 +31,7 @@ I'm Cho Seok-lea, an undergraduate student in the Department of Intelligent Syst
 
 My research interests lie in efficient on-device AI, edge inference, AI accelerators, and low-level system optimization
 
-I am interested in making AI models run efficiently under real-world hardware constraints through model optimization, resource-aware execution, and hardware/software co-design. I also research federated learning and trustworthy AI, focusing on reliable, secure in distributed environments.
+I also research federated learning and trustworthy AI, focusing on reliable, secure in distributed environments.
 
 **Research Interests**
 

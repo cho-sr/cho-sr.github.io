@@ -29,9 +29,9 @@ latest_posts:
 
 I'm Cho Seok-lea, an undergraduate student in the Department of Intelligent Systems and IoT at Hansung University.
 
-My research focuses on trustworthy AI in federated learning and distributed AI environments.
+My research interests lie in efficient on-device AI, edge inference, AI accelerators, and low-level system optimization
 
-I study attacks such as privacy leakage, poisoning, and adversarial manipulation together with robust learning, verification, and mitigation techniques. I am also interested in federated unlearning, Bayesian uncertainty estimation, and resource-aware sparsification for building federated learning frameworks that are reliable, accountable, secure, scalable, and efficient.
+I am interested in making AI models run efficiently under real-world hardware constraints through model optimization, resource-aware execution, and hardware/software co-design. I also research federated learning and trustworthy AI, focusing on reliable, secure in distributed environments.
 
 **Research Interests**
 

@@ -22,6 +22,12 @@ cv:
           - Designing learning frameworks that combine federated unlearning with Bayesian uncertainty estimation to improve reliability, accountability, and security.
           - Improving the scalability and efficiency of federated learning through resource-aware sparsification without sharing client data.
 
+      - company: High-Performance Computing Lab, Chung-Ang University
+        position: Research Intern
+        location: Korea
+        start_date: "2026-04"
+        end_date: "2026-07"
+
       - company: LG Aimers 4th
         position: Participant
         start_date: "2024-01"

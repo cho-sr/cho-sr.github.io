@@ -42,6 +42,7 @@ I also research federated learning and trustworthy AI, focusing on reliable, sec
 **[Experiences]({{ '/cv/' | relative_url }})**
 
 - **Undergraduate Researcher, Prof. Jinwoo Gong** / 2025.12 - Present
+- **Research Intern, High-Performance Computing Lab, Chung-Ang University, Korea** / 2026.04 - 2026.07
 - **LG Aimers 4th** / 2024.01 - 2024.03
 - **BoostCourse Coaching Study 13th** / 2023.10 - 2023.11
 - **Hansung University, IT Convergence Engineering (Intelligent Systems Track)** / 2021 - Present

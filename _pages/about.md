@@ -27,6 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+**About**
+
 I'm Cho Seok-lea, an undergraduate student in the Department of Intelligent Systems and IoT at Hansung University.
 
 My research interests lie in efficient on-device AI, edge inference, AI accelerators, and low-level system optimization

@@ -35,11 +35,15 @@ My research interests lie in efficient on-device AI, edge inference, AI accelera
 
 I also research federated learning and trustworthy AI, focusing on reliable, secure in distributed environments.
 
+---
+
 **Research Interests**
 
 - **Energy Efficient Edge Inference**
 - **Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
 - **Deep Learning/AI Accelerator**
+
+---
 
 **[Experiences]({{ '/cv/' | relative_url }})**
 
@@ -49,14 +53,20 @@ I also research federated learning and trustworthy AI, focusing on reliable, sec
 - **BoostCourse Coaching Study 13th** / 2023.10 - 2023.11
 - **Hansung University, IT Convergence Engineering (Intelligent Systems Track)** / 2021 - Present
 
+---
+
 **[Project]({{ '/projects/' | relative_url }})**
 
 I have built edge AI, mobile, IoT capstone, federated learning, and video search projects using PyTorch, CUDA, ExecuTorch, Kotlin, Swift, and Jetpack Compose.
+
+---
 
 **[Award]({{ '/cv/' | relative_url }}#awards)**
 
 - <strong>Hansung University, Internet of Things Track Capstone Design Excellence Award (2nd place)</strong>
 - <strong>Hansung University, Intelligence System Track Capstone Design Excellence Award (2nd place)</strong>
+
+---
 
 **[Recent Publication]({{ '/publications/' | relative_url }})**
 
@@ -64,6 +74,11 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
   .post article > .clearfix {
     font-size: 19px;
     line-height: 1.5;
+  }
+
+  .post article > .clearfix > hr {
+    overflow: hidden;
+    margin: 1.5rem 0;
   }
 
   #cho2027consistent > .author + .periodical,

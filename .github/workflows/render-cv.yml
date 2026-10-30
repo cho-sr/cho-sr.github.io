@@ -47,7 +47,21 @@ jobs:
             echo "Missing RenderCV config file!"
             exit 1
           fi
-          rendercv render $cv_file --settings $settings
+          # The website's awards use title fields, while RenderCV expects bullet entries.
+          rendercv_input="_data/.rendercv-input.yml"
+          trap 'rm -f "$rendercv_input"' EXIT
+          python -c '
+          import sys
+          import yaml
+
+          with open(sys.argv[1], encoding="utf-8") as source:
+              data = yaml.safe_load(source)
+          sections = data["cv"]["sections"]
+          sections["Awards"] = [{"bullet": award["title"]} for award in sections["Awards"]]
+          with open(sys.argv[2], "w", encoding="utf-8") as target:
+              yaml.safe_dump(data, target, allow_unicode=True, sort_keys=False)
+          ' "$cv_file" "$rendercv_input"
+          rendercv render "$rendercv_input" --settings "$settings"
           rm assets/rendercv/rendercv_output/*.typ
       - name: Upload rendercv_output as an artifact
         uses: actions/upload-artifact@v4

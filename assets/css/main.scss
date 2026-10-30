@@ -32,3 +32,24 @@
 @use "tabs";
 @use "teachings";
 @use "typograms";
+
+// Keep the footer's existing appearance when it follows the page content.
+footer.sticky-bottom {
+  background-color: var(--global-footer-bg-color);
+  border-top: 0;
+  padding: 9px 0 8px;
+  font-size: 0.75rem;
+
+  .container {
+    color: var(--global-footer-text-color);
+  }
+
+  a {
+    color: var(--global-footer-link-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}

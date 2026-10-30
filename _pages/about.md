@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**About**
+<strong class="about-section-title">About</strong>
 
 I'm Cho Seok-lea, an undergraduate student in the Department of Intelligent Systems and IoT at Hansung University.
 
@@ -37,7 +37,7 @@ I also research federated learning and trustworthy AI, focusing on reliable, sec
 
 ---
 
-**Research Interests**
+<strong class="about-section-title">Research Interests</strong>
 
 - **Energy Efficient Edge Inference**
 - **Federated Learning:** Distributed Optimization, Attacks and Defenses in Distributed AI and FL
@@ -45,7 +45,7 @@ I also research federated learning and trustworthy AI, focusing on reliable, sec
 
 ---
 
-**[Experiences]({{ '/cv/' | relative_url }})**
+<strong class="about-section-title">Experiences</strong>
 
 - **Undergraduate Researcher, Prof. Jinwoo Gong** / 2025.12 - Present
 - **Research Intern, High-Performance Computing Lab, Chung-Ang University, Korea** / 2026.04 - Present
@@ -53,22 +53,26 @@ I also research federated learning and trustworthy AI, focusing on reliable, sec
 - **BoostCourse Coaching Study 13th** / 2023.10 - 2023.11
 - **Hansung University, IT Convergence Engineering (Intelligent Systems Track)** / 2021 - Present
 
+[See more]({{ '/cv/' | relative_url }})
+
 ---
 
-**[Project]({{ '/projects/' | relative_url }})**
+<strong class="about-section-title">Project</strong>
 
 I have built edge AI, mobile, IoT capstone, federated learning, and video search projects using PyTorch, CUDA, ExecuTorch, Kotlin, Swift, and Jetpack Compose.
 
+[See more]({{ '/projects/' | relative_url }})
+
 ---
 
-**[Award]({{ '/cv/' | relative_url }}#awards)**
+<strong class="about-section-title">Award</strong>
 
 - <strong>Hansung University, Internet of Things Track Capstone Design Excellence Award (2nd place)</strong>
 - <strong>Hansung University, Intelligence System Track Capstone Design Excellence Award (2nd place)</strong>
 
 ---
 
-**[Recent Publication]({{ '/publications/' | relative_url }})**
+<strong class="about-section-title">Recent Publication</strong>
 
 <style>
   .post article > .clearfix {
@@ -81,6 +85,10 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
     margin: 1.5rem 0;
   }
 
+  .about-section-title {
+    color: var(--global-theme-color);
+  }
+
   #cho2027consistent > .author + .periodical,
   #kim2025llmleakage > .author + .periodical {
     display: none;
@@ -90,3 +98,5 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
 <div class="publications">
   {% bibliography --group_by none --query @*[selected=true]* %}
 </div>
+
+[See more]({{ '/publications/' | relative_url }})

@@ -58,6 +58,13 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
 
 **[Recent Publication]({{ '/publications/' | relative_url }})**
 
+<style>
+  #cho2027consistent > .author + .periodical,
+  #kim2025llmleakage > .author + .periodical {
+    display: none;
+  }
+</style>
+
 <div class="publications">
   {% bibliography --group_by none --query @*[selected=true]* %}
 </div>

@@ -89,6 +89,24 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
     color: var(--global-theme-color);
   }
 
+  .post article > .clearfix .publications .abbr {
+    display: none;
+  }
+
+  .post article > .clearfix .publications .row > .col-sm-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .post article > .clearfix .publications .title {
+    font-weight: 700;
+  }
+
+  .post article > .clearfix .publications .author > em {
+    border-bottom: 0;
+    font-style: italic;
+  }
+
   #cho2027consistent > .author + .periodical,
   #kim2025llmleakage > .author + .periodical {
     display: none;

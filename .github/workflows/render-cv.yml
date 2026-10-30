@@ -58,6 +58,9 @@ jobs:
               data = yaml.safe_load(source)
           sections = data["cv"]["sections"]
           sections["Awards"] = [{"bullet": award["title"]} for award in sections["Awards"]]
+          for publication in sections.get("Publications", []):
+              if "publisher" in publication:
+                  publication["journal"] = publication.pop("publisher")
           with open(sys.argv[2], "w", encoding="utf-8") as target:
               yaml.safe_dump(data, target, allow_unicode=True, sort_keys=False)
           ' "$cv_file" "$rendercv_input"

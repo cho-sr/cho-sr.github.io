@@ -55,7 +55,7 @@ cv:
         authors:
           - Kim, Taemin
           - Cho, Seoklea
-        publisher: Submitted to IEIE
+        publisher: IEIE Conference, 2025
         releaseDate: "2025"
         url: https://cho-sr.github.io/assets/pdf/evaluating-generalization-data-leakage.pdf
         summary: Perturbation-based robustness test for checking data leakage and generalization in large language model evaluation.

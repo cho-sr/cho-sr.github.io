@@ -33,6 +33,19 @@
 @use "teachings";
 @use "typograms";
 
+// Fill short screens while keeping the footer in the document flow.
+body.sticky-bottom-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  > .container[role="main"] {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+
 // Keep the footer's existing appearance when it follows the page content.
 footer.sticky-bottom {
   background-color: var(--global-footer-bg-color);

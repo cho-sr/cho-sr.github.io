@@ -60,7 +60,7 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
 
 <style>
   .post article > .clearfix {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.5;
   }
 

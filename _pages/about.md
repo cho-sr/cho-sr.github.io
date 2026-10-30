@@ -13,7 +13,7 @@ profile:
     <p>116, Samseonyo-ro 16-gii</p>
     <p>Seongbuk-gu, Seoul</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # the publication list is included in the page content below
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -55,3 +55,9 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
 
 - <strong>Hansung University, Internet of Things Track Capstone Design Excellence Award (2nd place)</strong>
 - <strong>Hansung University, Intelligence System Track Capstone Design Excellence Award (2nd place)</strong>
+
+**[Recent Publication]({{ '/publications/' | relative_url }})**
+
+<div class="publications">
+  {% bibliography --group_by none --query @*[selected=true]* %}
+</div>

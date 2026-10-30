@@ -59,6 +59,11 @@ I have built edge AI, mobile, IoT capstone, federated learning, and video search
 **[Recent Publication]({{ '/publications/' | relative_url }})**
 
 <style>
+  .post article > .clearfix {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
   #cho2027consistent > .author + .periodical,
   #kim2025llmleakage > .author + .periodical {
     display: none;

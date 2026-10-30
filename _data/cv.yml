@@ -26,7 +26,7 @@ cv:
         position: Research Intern
         location: Korea
         start_date: "2026-04"
-        end_date: present
+        end_date: "2027-02"
 
       - company: LG Aimers 4th
         position: Participant
@@ -45,10 +45,10 @@ cv:
     Education:
       - institution: Hansung University
         location: Seoul, South Korea
-        area: IT Convergence Engineering, Intelligent Systems Track
+        area: IT Convergence Engineering, Intelligent System and IoT Track
         studyType: B.S.
-        start_date: "2021"
-        end_date: present
+        start_date: "2021-03"
+        end_date: "2027-02"
 
     Publications:
       - title: Evaluating Generalization and Data Leakage in Large Language Models via Data Perturbation
